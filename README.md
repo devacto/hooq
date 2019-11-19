@@ -22,9 +22,22 @@ These elements are: Route53, AWS WAF, and AWS Elasticache.
 
 ### 2. Deployment
 
+#### 2.1. Code Organisation
 
-### 3. Deployment Environments
+Code used in this project is organised into modules. For example, the code for
+deploying the API can be found here. Front-end, database, and reverse proxy
+Terraform codes are also stored in their respective folders.
 
-### 4. Integration with BuildKite
 
-### 5. Secrets Management
+
+#### 2.2. Deployment Environments
+
+### 3. Integration with BuildKite
+
+BuildKite is a continuous integration and deployment runner similar to Jenkins.
+
+#### 3.1. Pipeline-as-code
+
+
+
+#### 3.2. Secure secrets
