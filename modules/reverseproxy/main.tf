@@ -69,7 +69,7 @@ resource "aws_alb_listener_rule" "api_listener_rule" {
 # configuring listener rule for the frontend.
 resource "aws_alb_listener_rule" "frontend_listener_rule" {
   listener_arn = "${aws_alb_listener.reverse_proxy.arn}"
-  priority     = ""
+  priority     = "2"
   action {
     type          = "redirect"
     redirect {

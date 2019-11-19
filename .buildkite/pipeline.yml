@@ -1,0 +1,14 @@
+steps:
+  - name: ":terraform: :eyeglasses:"
+    command: ".buildkite/steps/terraform-validate.sh"
+
+  - name: ":terraform: :thinking_face:"
+    command: ".buildkite/steps/terraform-plan.sh"
+    artifact_paths: "plans/*"
+    concurrency: 1
+    concurrency_group: terraform/update-state
+
+  - name: ":terraform: :running:"
+    command: ".buildkite/steps/terraform-apply.sh"
+    concurrency: 1
+    concurrency_group: terraform/update-state

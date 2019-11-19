@@ -49,19 +49,26 @@ The reverse proxy Terraform code can be found [here](https://github.com/devacto/
 
 Pictures below show this ALB being deployed, and its ALB rules.
 
-![ALB]()
+![ALB](./docs/images/hooq_alb.png)
+
+![Rules](./docs/images/hooq_alb_rules.png)
 
 #### 2.2. Deployment Environments
 
-Deployment environments such as `dev`, or `prod`, is reflected using Terraform variables.
-Here 
+Deployment environments such as `dev`, or `prod`, is reflected using Terraform variable `environment`.
 
-### 3. Integration with BuildKite
+Screenshot below shows the database on RDS which is on the dev environment.
 
-BuildKite is a continuous integration and deployment runner similar to Jenkins.
+![DB](./docs/images/hooq_db.png)
+
+### 3. Integration with Buildkite
+
+Buildkite is a continuous integration and deployment runner similar to Jenkins.
 
 #### 3.1. Pipeline-as-code
 
+Buildkite pipeline is expressed as code [here](https://github.com/devacto/hooq/blob/master/.buildkite/pipeline.yml). 
 
+Screenshot below shows the Buildkite pipeline.
 
-#### 3.2. Secure secrets
+![Buildkite](./docs/images/buildkite.png)
