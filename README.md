@@ -13,7 +13,7 @@ The picture below shows
 #### 1.2. Architecture Option 2
 
 
-##### Not Deployed
+#### 1.3. Not Deployed
 
 Some elements of the architecture are not reflected in the Terraform script
 because of lack of time.
