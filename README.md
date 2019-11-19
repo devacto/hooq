@@ -1,2 +1,2 @@
-# hooq
-Cloud native deployment using Terraform.
+# Deploys a Microservice using Terraform
+
