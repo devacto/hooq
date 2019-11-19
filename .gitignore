@@ -11,3 +11,6 @@
 
 # Local commands
 local_commands.sh
+
+# Mac
+.DS_Store
