@@ -6,8 +6,8 @@ Terraform scripts to deploy an API and frontend microservices.
 
 #### 1.1. Architecture Option 1
 
-The picture below shows one architecture option. Here we use Auto-Scaling-Group
-and Elastic-Load-Balancer to ensure that the apps are fault tolerant and
+The picture below shows one architecture option. Here we use Auto Scaling Group
+and Elastic Load Balancer to ensure that the apps are fault tolerant and
 highly-scalable.
 
 The advantage of this architecture is that it is quite vendor agnostic. The code
@@ -33,9 +33,7 @@ Architecture Option 1 is the one that is shown in the Terraform scripts in this
 repository. 
 
 Some elements of the architecture are not reflected in the Terraform script
-because of lack of time.
-
-These elements are: Route53, AWS WAF, and AWS Elasticache.
+because of lack of time. These elements are: Route53, AWS WAF, and AWS Elasticache.
 
 ### 2. Deployment
 
