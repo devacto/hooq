@@ -43,7 +43,18 @@ Code used in this project is organised into modules. For example, the code for
 deploying the API can be found [here](https://github.com/devacto/hooq/blob/master/modules/api/main.tf).
 Front-end, database, and reverse proxy Terraform codes are also stored in their respective folders.
 
+#### 2.2. ALB Rules
+
+The reverse proxy Terraform code can be found [here](https://github.com/devacto/hooq/blob/master/modules/reverseproxy/main.tf).
+
+Pictures below show this ALB being deployed, and its ALB rules.
+
+![ALB]()
+
 #### 2.2. Deployment Environments
+
+Deployment environments such as `dev`, or `prod`, is reflected using Terraform variables.
+Here 
 
 ### 3. Integration with BuildKite
 

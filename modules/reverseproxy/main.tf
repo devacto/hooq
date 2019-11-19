@@ -65,3 +65,23 @@ resource "aws_alb_listener_rule" "api_listener_rule" {
     values = ["/api"]
   }
 }
+
+# configuring listener rule for the frontend.
+resource "aws_alb_listener_rule" "frontend_listener_rule" {
+  listener_arn = "${aws_alb_listener.reverse_proxy.arn}"
+  priority     = ""
+  action {
+    type          = "redirect"
+    redirect {
+      host        = "${var.frontend_dns}"
+      port        = "80"
+      protocol    = "HTTP"
+      status_code = "HTTP_301"
+      path        = "/"
+    }
+  }
+  condition {
+    field  = "path-pattern"
+    values = ["/"]
+  }
+}
