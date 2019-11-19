@@ -68,7 +68,6 @@ Buildkite is a continuous integration and deployment runner similar to Jenkins.
 #### 3.1. Pipeline-as-code
 
 Buildkite pipeline is expressed as code [here](https://github.com/devacto/hooq/blob/master/.buildkite/pipeline.yml).
-
 An example step in the pipeline can be found [here](https://github.com/devacto/hooq/blob/master/.buildkite/terraform-apply.sh).
 
 Screenshot below shows the Buildkite pipeline.
